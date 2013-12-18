@@ -197,7 +197,7 @@ def export_dict(tree, feature_names=None, max_depth=None) :
         if feature == _tree.TREE_UNDEFINED :
             feature = None
             threshold = None
-            value = [map(int, l) for l in tree_.value[i].tolist()]
+            value = [tree_.value[i].tolist()]
         else :
             value = None
             if feature_names :
